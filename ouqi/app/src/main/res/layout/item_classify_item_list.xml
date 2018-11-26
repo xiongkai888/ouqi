@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/v_match_parent_no"
+    android:layout_margin="@dimen/d_5dp">
+
+    <LinearLayout style="@style/v_match_parent_no">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/temp_goods" />
+
+        <TextView
+            android:id="@+id/content_tv"
+            style="@style/text"
+            android:layout_marginTop="@dimen/d_2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/d_5dp"
+            android:paddingRight="@dimen/d_5dp"
+            android:paddingTop="@dimen/d_5dp"
+            android:text="柔洁"
+            android:textSize="@dimen/txt_12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

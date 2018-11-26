@@ -12,6 +12,7 @@ import com.lanmei.ouqi.R;
 import com.xson.common.utils.StringUtils;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -24,9 +25,9 @@ public class TabHelper {
     private Context context;
     private List<String> titleList;
     private TabLayout tabLayout;
-    private int colorId =  R.color.colorPrimary;//选中的颜色ID
+    private int colorId =  R.color.color83AE05;//选中的颜色ID
 
-    int[] imageArray = {R.drawable.ic_launcher_background, R.drawable.ic_launcher_background,R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background};
+    int[] imageArray = {R.mipmap.tab_home_on, R.mipmap.tab_home_off,R.mipmap.tab_classify_on, R.mipmap.tab_classify_off, R.mipmap.tab_share_bill_on, R.mipmap.tab_share_bill_off, R.mipmap.tab_shopping_on, R.mipmap.tab_shopping_off, R.mipmap.tab_mine_on, R.mipmap.tab_mine_off};
 
     /**
      * @param context
@@ -42,11 +43,11 @@ public class TabHelper {
 
     private List<String> getTitleList() {
         List<String> titles = new ArrayList<>();
-        titles.add(context.getString(R.string.home));
-        titles.add(context.getString(R.string.classify));
-        titles.add(context.getString(R.string.share_bill));
-        titles.add(context.getString(R.string.shopping_cart));
-        titles.add(context.getString(R.string.mine));
+        Collections.addAll(titles,context.getString(R.string.home),
+                context.getString(R.string.classify),
+                context.getString(R.string.share_bill),
+                context.getString(R.string.shopping_cart),
+                context.getString(R.string.mine));
         return titles;
     }
 
@@ -60,7 +61,8 @@ public class TabHelper {
             txt_title.setTextColor(context.getResources().getColor(colorId));
             img_title.setImageResource(imageArray[position]);
         } else {
-            txt_title.setTextColor(Color.parseColor("#000000"));
+//            txt_title.setTextColor(Color.parseColor("#000000"));
+            txt_title.setTextColor(context.getResources().getColor(R.color.black));
             img_title.setImageResource(imageArray[position * 2 + 1]);
         }
         return view;

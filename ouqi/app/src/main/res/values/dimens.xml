@@ -13,6 +13,7 @@
     <dimen name="txt_20sp">20sp</dimen>
 
     <!---->
+    <dimen name="d_03dp">0.3dp</dimen>
     <dimen name="d_0dp">0dp</dimen>
     <dimen name="d_1dp">1dp</dimen>
     <dimen name="d_2dp">2dp</dimen>
