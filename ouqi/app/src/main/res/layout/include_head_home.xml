@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_ad" />
+
+    <LinearLayout
+        style="@style/ll_bottom_h_no"
+        android:padding="@dimen/d_10dp">
+
+        <TextView
+            style="@style/mine_text_style"
+            android:drawableTop="@mipmap/home_classify_1"
+            android:text="精品区" />
+
+        <TextView
+            style="@style/mine_text_style"
+            android:drawableTop="@mipmap/home_classify_2"
+            android:text="特美推荐" />
+
+        <TextView
+            style="@style/mine_text_style"
+            android:drawableTop="@mipmap/home_classify_3"
+            android:text="品牌汇" />
+
+        <TextView
+            style="@style/mine_text_style"
+            android:drawableTop="@mipmap/home_classify_4"
+            android:text="每日上新" />
+
+        <TextView
+            style="@style/mine_text_style"
+            android:drawableTop="@mipmap/home_classify_5"
+            android:text="母婴" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_bottom_h"
+        android:padding="@dimen/d_10dp">
+
+        <TextView
+            style="@style/mine_text_style"
+            android:drawableTop="@mipmap/home_classify_6"
+            android:text="百货" />
+
+        <TextView
+            style="@style/mine_text_style"
+            android:drawableTop="@mipmap/home_classify_7"
+            android:text="食品" />
+
+        <TextView
+            style="@style/mine_text_style"
+            android:drawableTop="@mipmap/home_classify_8"
+            android:text="粮油" />
+
+        <TextView
+            style="@style/mine_text_style"
+            android:drawableTop="@mipmap/home_classify_9"
+            android:text="美妆" />
+
+        <TextView
+            style="@style/mine_text_style"
+            android:drawableTop="@mipmap/home_classify_10"
+            android:text="更多" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/h_match_parent_no"
+        android:layout_margin="@dimen/d_5dp"
+        android:background="@drawable/new_messages_bg"
+        android:gravity="center_vertical"
+        android:padding="@dimen/d_10dp">
+
+        <ImageView
+            style="@style/text"
+            android:src="@mipmap/home_new_messages" />
+
+        <com.paradoxie.autoscrolltextview.VerticalTextview
+            android:id="@+id/tvBulletin"
+            android:layout_width="@dimen/d_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:layout_marginRight="@dimen/d_5dp"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/text12color999"
+            android:text="| 更多" />
+
+    </LinearLayout>
+
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <LinearLayout
+        style="@style/ll_bottom_h_no"
+        android:padding="@dimen/d_10dp">
+
+        <ImageView
+            style="@style/text"
+            android:src="@mipmap/home_miao_sha" />
+
+        <TextView
+            style="@style/text_weight"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:text="10时42分22秒" />
+
+        <TextView
+            style="@style/text12colorRed"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:text="更多秒杀 >>" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_ms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView style="@style/line_H1dp_divider" />
+</LinearLayout>

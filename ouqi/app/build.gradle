@@ -12,10 +12,37 @@ android {
         buildConfigField "String", "API_URL", "\"http://47.107.59.111/api/\""
         javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
     }
+
     buildTypes {
         release {
             minifyEnabled false
+            signingConfig signingConfigs.debug
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'ouqi'
+            keyPassword 'lanmei888'
+            storeFile file('ouqi.jks')
+            storePassword 'lanmei888'
+        }
+
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.startsWith('app-release')) {
+                def fileName = outputFile.name.replace("app-release", "ouqi_vc${defaultConfig.versionCode}_vn${defaultConfig.versionName}_${buildTime()}")
+                outputFileName = fileName
+            }
         }
     }
 
@@ -23,6 +50,12 @@ android {
         resolutionStrategy.force 'com.android.support:support-annotations:27.1.1'
     }
 
+}
+
+def buildTime() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmm')
+    return formattedDate
 }
 
 repositories {
@@ -39,4 +72,12 @@ dependencies {
 
     implementation project(path: ':common')
     implementation project(':wheel-date-picker')
+    //cardview
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    //VerticalTabLayout
+    implementation 'q.rorbin:VerticalTabLayout:1.2.5'
+    //轮播图
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    //上下滚动Textview
+    implementation 'com.github.paradoxie:AutoVerticalTextview:0.1'
 }

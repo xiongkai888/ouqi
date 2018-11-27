@@ -8,5 +8,27 @@
     <string name="mine">我的</string>
 
     <string name="developing">开发中</string>
+    <string name="input_keyword">请输入关键字</string>
+    <string name="share_bill_timer"><![CDATA[拼团倒计时 :<font color="#FF0000">%s</font>]]></string>
+    <string name="order_state"><![CDATA[状态 :<font color="#FF0000">%s</font>]]></string>
+    <string name="order_total_price"><![CDATA[总价 :<font color="#000000">￥%s</font>]]></string>
+
+    <string name="just_now">刚刚</string>
+    <string name="minutes_ago">分钟前</string>
+    <string name="hours_ago">小时前</string>
+    <string name="yesterday">昨天</string>
+    <string name="day_before_yesterday">前天</string>
+    <string name="days_ago">天前</string>
+    <string name="format_all_time">yyyy-MM-dd HH:mm:ss</string>
+    <string name="format_time_no_second">yyyy-MM-dd HH:mm</string>
+    <string name="format_time_year_month_day">yyyy-MM-dd</string>
+
+    <string name="all">全部</string>
+    <string name="wait_pay">待支付</string>
+    <string name="wait_receiving">待收货</string>
+    <string name="doned">已完成</string>
+    <string name="wait_deliver">待发货</string>
+    <string name="wait_evaluate">待评价</string>
+    <string name="wait_share">待分享</string>
 
 </resources>

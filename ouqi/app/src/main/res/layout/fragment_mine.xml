@@ -89,7 +89,7 @@
                                 style="@style/text_weight"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="1个\n红包"
+                                android:text="0个\n红包"
                                 android:textColor="@color/color666" />
 
                             <TextView
@@ -140,44 +140,34 @@
                 android:padding="@dimen/d_10dp">
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_1_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_1"
-                    android:gravity="center_horizontal"
-                    android:text="待付款"
-                    android:textColor="@color/color666" />
+                    android:text="待付款" />
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_2_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_2"
-                    android:gravity="center_horizontal"
-                    android:text="代发货"
-                    android:textColor="@color/color666" />
+                    android:text="待发货" />
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_3_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_3"
-                    android:gravity="center_horizontal"
-                    android:text="待收货"
-                    android:textColor="@color/color666" />
+                    android:text="待收货" />
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_4_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_4"
-                    android:gravity="center_horizontal"
-                    android:text="待评价"
-                    android:textColor="@color/color666" />
+                    android:text="待评价" />
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_5_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_5"
-                    android:gravity="center_horizontal"
-                    android:text="待分享"
-                    android:textColor="@color/color666" />
+                    android:text="待分享" />
 
             </LinearLayout>
 
@@ -190,36 +180,28 @@
                 android:padding="@dimen/d_10dp">
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_6_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_6"
-                    android:gravity="center_horizontal"
-                    android:text="我的拼团"
-                    android:textColor="@color/color666" />
+                    android:text="我的拼团" />
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_7_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_7"
-                    android:gravity="center_horizontal"
-                    android:text="收藏商品"
-                    android:textColor="@color/color666" />
+                    android:text="收藏商品" />
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_8_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_8"
-                    android:gravity="center_horizontal"
-                    android:text="历史浏览"
-                    android:textColor="@color/color666" />
+                    android:text="历史浏览" />
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_9_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_9"
-                    android:gravity="center_horizontal"
-                    android:text="退款售后"
-                    android:textColor="@color/color666" />
+                    android:text="退款售后" />
 
             </LinearLayout>
 
@@ -232,71 +214,36 @@
                 android:padding="@dimen/d_10dp">
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_10_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_10"
-                    android:gravity="center_horizontal"
-                    android:text="果园种植"
-                    android:textColor="@color/color666" />
+                    android:text="果园种植" />
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_11_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_11"
-                    android:gravity="center_horizontal"
-                    android:text="官方客服"
-                    android:textColor="@color/color666" />
+                    android:text="官方客服" />
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_12_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_12"
-                    android:gravity="center_horizontal"
-                    android:text="个人设置"
-                    android:textColor="@color/color666" />
+                    android:text="个人设置" />
 
                 <TextView
-                    style="@style/text_weight"
-                    android:drawablePadding="@dimen/d_3dp"
+                    android:id="@+id/mine_13_tv"
+                    style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_13"
-                    android:gravity="center_horizontal"
-                    android:text="收货地址"
-                    android:textColor="@color/color666" />
+                    android:text="收货地址" />
 
             </LinearLayout>
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/d_10dp"
-                android:paddingLeft="@dimen/d_40dp"
-                android:paddingRight="@dimen/d_40dp">
-
-                <TextView
-                    style="@style/text_weight"
-                    android:layout_height="@dimen/d_03dp"
-                    android:background="@color/color999" />
-
-                <TextView
-                    style="@style/text"
-                    android:layout_margin="@dimen/d_10dp"
-                    android:drawablePadding="@dimen/d_5dp"
-                    android:gravity="center_vertical"
-                    android:text="为你推荐" />
-
-                <TextView
-                    style="@style/text_weight"
-                    android:layout_height="@dimen/d_03dp"
-                    android:background="@color/color999" />
-            </LinearLayout>
-
+            <include layout="@layout/include_type" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recyclerView"
-                style="@style/match_parent"/>
+                style="@style/match_parent" />
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

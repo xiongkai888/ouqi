@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_marginBottom="@dimen/d_10dp"
-    style="@style/v_match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/v_match_parent"
+    android:layout_marginBottom="@dimen/d_10dp">
 
 
     <LinearLayout
-        android:padding="@dimen/d_10dp"
-        style="@style/ll_bottom_h">
+        style="@style/ll_bottom_h"
+        android:padding="@dimen/d_10dp">
 
         <TextView
             style="@style/text12color999"
-            android:layout_weight="1"
             android:layout_width="@dimen/d_0dp"
+            android:layout_weight="1"
             android:text="2018-11-26 12:25" />
 
 
@@ -22,46 +23,49 @@
     </LinearLayout>
 
     <LinearLayout
-        android:padding="@dimen/d_10dp"
-        style="@style/ll_bottom_h">
+        style="@style/ll_bottom_h"
+        android:padding="@dimen/d_10dp">
 
-       <ImageView
-           android:src="@mipmap/temp_goods"
-           android:layout_width="@dimen/d_60dp"
-           android:layout_height="@dimen/d_60dp" />
+        <ImageView
+            android:layout_width="@dimen/d_60dp"
+            android:layout_height="@dimen/d_60dp"
+            android:src="@mipmap/temp_goods" />
 
 
         <LinearLayout
-            android:layout_marginLeft="@dimen/d_5dp"
-            style="@style/v_match_parent_no">
+            style="@style/v_match_parent_no"
+            android:layout_marginLeft="@dimen/d_5dp">
 
 
             <TextView
-                android:text="fasdfasd fasdfasdfasdfasdfasdfas"
-                android:maxLines="2"
+                style="@style/text14color666"
                 android:ellipsize="end"
-               style="@style/text14color666" />
+                android:maxLines="1"
+                android:text="fasdfasd fasdfasdfasdfasdfasdfas" />
 
 
             <LinearLayout
-               style="@style/h_match_parent_no">
+                android:paddingTop="@dimen/d_2dp"
+                android:paddingBottom="@dimen/d_2dp"
+                style="@style/h_match_parent_no">
 
                 <TextView
-                    android:text="￥349.00"
-                    style="@style/text14colorRed" />
+                    style="@style/text14colorRed"
+                    android:text="￥349.00" />
 
 
                 <TextView
+                    style="@style/text12color999"
                     android:layout_marginLeft="@dimen/d_5dp"
-                    android:text="￥349.00"
-                    style="@style/text12color999" />
+                    android:text="￥349.00" />
 
 
                 <TextView
+                    style="@style/text10colorWhite"
                     android:layout_marginLeft="@dimen/d_5dp"
-                    android:text="5人成团"
+                    android:layout_gravity="center_vertical"
                     android:background="@drawable/share_bill_bottom"
-                    style="@style/text10colorWhite" />
+                    android:text="5人成团" />
 
 
             </LinearLayout>
@@ -71,23 +75,24 @@
     </LinearLayout>
 
     <LinearLayout
-        android:padding="@dimen/d_10dp"
-        style="@style/ll_bottom_h_no">
+        style="@style/ll_bottom_h_no"
+        android:padding="@dimen/d_10dp">
 
-        <TextView
+        <com.xson.common.widget.FormatTextView
             style="@style/text12color999"
-            android:layout_weight="1"
             android:layout_width="@dimen/d_0dp"
-            android:text="拼团倒计时 1天14:42:32" />
+            android:layout_weight="1"
+            app:defaultValue="1天14:42:32"
+            app:formatText="@string/share_bill_timer" />
 
 
         <TextView
-            android:background="@drawable/share_bill_bottom"
-            android:paddingBottom="@dimen/d_3dp"
-            android:paddingTop="@dimen/d_3dp"
-            android:paddingRight="@dimen/d_8dp"
-            android:paddingLeft="@dimen/d_8dp"
             style="@style/text12colorWhite"
+            android:background="@drawable/share_bill_bottom_sub"
+            android:paddingBottom="@dimen/d_5dp"
+            android:paddingLeft="@dimen/d_10dp"
+            android:paddingRight="@dimen/d_10dp"
+            android:paddingTop="@dimen/d_5dp"
             android:text="一键邀请参团" />
 
     </LinearLayout>

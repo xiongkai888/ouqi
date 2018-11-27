@@ -68,6 +68,18 @@ public class TabHelper {
         return view;
     }
 
+    public void setOrderNum(int num){
+        TabLayout.Tab tab = tabLayout.getTabAt(3);
+        View view = tab.getCustomView();
+        TextView orderNumTv = (TextView) view.findViewById(R.id.order_num_tv);
+        if (num == 0){
+            orderNumTv.setVisibility(View.GONE);
+        }else {
+            orderNumTv.setVisibility(View.VISIBLE);
+            orderNumTv.setText(String.valueOf(num));
+        }
+    }
+
     public void setupTabIcons() {
         if (StringUtils.isEmpty(titleList)) {
             return;

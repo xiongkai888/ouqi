@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/v_match_parent_no"
+    android:layout_marginBottom="@dimen/d_10dp">
+
+    <TextView
+        style="@style/match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/d_10dp"
+        android:text="订单号：100866" />
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <LinearLayout
+        style="@style/ll_bottom_h"
+        android:padding="@dimen/d_10dp">
+
+
+        <ImageView
+            android:layout_width="@dimen/d_60dp"
+            android:layout_height="@dimen/d_60dp"
+            android:src="@mipmap/temp_goods" />
+
+        <LinearLayout style="@style/v_match_parent_no">
+
+            <TextView
+                style="@style/text"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="美素力金装婴儿配方奶粉一段（0——6个月婴儿使用）" />
+
+            <TextView
+                style="@style/text14color666"
+                android:text="x2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/h_match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/d_10dp">
+
+
+        <LinearLayout
+            style="@style/v_match_parent_no"
+            android:layout_width="@dimen/d_0dp"
+            android:layout_weight="1">
+
+            <com.xson.common.widget.FormatTextView
+                style="@style/text12color666"
+                app:defaultValue="配送中"
+                app:formatText="@string/order_state" />
+
+            <com.xson.common.widget.FormatTextView
+                style="@style/text12color666"
+                app:defaultValue="800.00"
+                app:formatText="@string/order_total_price" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:text="确定收货"
+            style="@style/text14colorRed"
+            android:background="@drawable/order_sure"
+            android:gravity="center" />
+
+        <TextView
+            android:text="再次购买"
+            android:layout_marginLeft="@dimen/d_10dp"
+            style="@style/text14colorWhite"
+            android:background="@drawable/order_pay_again"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -56,6 +56,7 @@ public class ClassifyFragment extends BaseFragment{
         itemListAdapter = new ClassifyItemListAdapter(context);
         smartSwipeRefreshLayout.setLayoutManager(new GridLayoutManager(context, 2));
         smartSwipeRefreshLayout.setAdapter(itemListAdapter);
+        smartSwipeRefreshLayout.setMode(SmartSwipeRefreshLayout.Mode.NO_PAGE);
         itemListAdapter.notifyDataSetChanged();
 
     }

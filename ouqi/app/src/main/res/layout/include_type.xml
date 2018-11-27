@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/d_40dp"
+    android:paddingRight="@dimen/d_40dp">
+
+    <TextView
+        style="@style/text_weight"
+        android:layout_height="@dimen/d_03dp"
+        android:background="@color/color999" />
+
+    <TextView
+        android:id="@+id/type_tv"
+        style="@style/text"
+        android:layout_margin="@dimen/d_10dp"
+        android:drawablePadding="@dimen/d_5dp"
+        android:gravity="center_vertical"
+        android:text="日用品系列" />
+
+    <TextView
+        style="@style/text_weight"
+        android:layout_height="@dimen/d_03dp"
+        android:background="@color/color999" />
+
+</LinearLayout>

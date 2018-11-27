@@ -28,7 +28,10 @@
         <item name="android:layout_height">match_parent</item>
     </style>
 
-
+    <style name="TabLayoutAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 
     <style name="h_match_parent_no" parent="match_parent">
         <item name="android:orientation">horizontal</item>
@@ -79,6 +82,9 @@
     <style name="text12color999" parent="Text.Size12">
         <item name="android:textColor">@color/color999</item>
     </style>
+    <style name="text12color666" parent="Text.Size12">
+        <item name="android:textColor">@color/color666</item>
+    </style>
     <style name="text12colorRed" parent="Text.Size12">
         <item name="android:textColor">@color/red</item>
     </style>
@@ -89,6 +95,10 @@
 
     <style name="text14color666" parent="Text.Size14">
         <item name="android:textColor">@color/color999</item>
+    </style>
+
+    <style name="text14color83AE05" parent="Text.Size14">
+        <item name="android:textColor">@color/color83AE05</item>
     </style>
 
     <style name="text14colorRed" parent="Text.Size14">
@@ -135,5 +145,12 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
     </style>
+
+    <style name="mine_text_style" parent="text_weight">
+        <item name="android:drawablePadding">@dimen/d_3dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/color666</item>
+    </style>
+
 
 </resources>

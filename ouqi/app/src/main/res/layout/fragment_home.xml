@@ -2,11 +2,75 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:text="@string/developing"
-        style="@style/text" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_50dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/border_bottom_divider"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/d_5dp">
+
+        <TextView
+            android:text="广州"
+            style="@style/text"
+            android:drawableRight="@mipmap/icon_down"
+            android:drawablePadding="@dimen/d_5dp"
+            android:paddingLeft="@dimen/d_5dp"
+            android:paddingRight="@dimen/d_10dp" />
+
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="@dimen/d_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="8dp"
+            android:hint="@string/input_keyword"
+            android:padding="7dp"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:text="登录"
+            style="@style/text14color83AE05"
+            android:drawableRight="@mipmap/icon_login"
+            android:drawablePadding="@dimen/d_3dp"
+            android:paddingLeft="@dimen/d_10dp"
+            android:paddingRight="@dimen/d_5dp" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                style="@style/v_match_parent_no"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <include layout="@layout/include_head_home" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>
