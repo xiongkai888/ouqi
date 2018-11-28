@@ -1,33 +1,25 @@
 package com.lanmei.ouqi.ui.mine.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 
 import com.lanmei.ouqi.R;
-import com.lanmei.ouqi.adapter.OrderAdapter;
 import com.xson.common.app.BaseActivity;
 import com.xson.common.widget.CenterTitleToolbar;
 
 import butterknife.InjectView;
 
-
 /**
- * 订单列表
+ * 设置
  */
-public class OrderListActivity extends BaseActivity {
+public class SettingActivity extends BaseActivity {
 
     @InjectView(R.id.toolbar)
     CenterTitleToolbar toolbar;
-    @InjectView(R.id.viewPager)
-    ViewPager mViewPager;
-    @InjectView(R.id.tabLayout)
-    TabLayout mTabLayout;
 
     @Override
     public int getContentViewId() {
-        return R.layout.activity_order_list;
+        return R.layout.activity_setting;
     }
 
     @Override
@@ -36,15 +28,8 @@ public class OrderListActivity extends BaseActivity {
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayShowTitleEnabled(true);
         actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setTitle("订单列表");
+        actionbar.setTitle(R.string.setting);
         actionbar.setHomeAsUpIndicator(R.mipmap.back);
-
-        mViewPager.setAdapter(new OrderAdapter(getSupportFragmentManager(),this));
-        mViewPager.setOffscreenPageLimit(3);
-        mTabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
-        mTabLayout.setupWithViewPager(mViewPager);
-        mViewPager.setCurrentItem(getIntent().getIntExtra("type",0));
-
     }
 
 }

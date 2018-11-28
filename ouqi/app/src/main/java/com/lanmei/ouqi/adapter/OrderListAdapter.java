@@ -1,82 +1,70 @@
 package com.lanmei.ouqi.adapter;
 
 import android.content.Context;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.lanmei.ouqi.R;
-import com.lanmei.ouqi.ui.mine.fragment.OrderListFragment;
+import com.lanmei.ouqi.bean.MineRecommendBean;
+import com.lanmei.ouqi.ui.mine.activity.OrderDetailsActivity;
+import com.lanmei.ouqi.utils.FormatTime;
+import com.xson.common.adapter.SwipeRefreshAdapter;
+import com.xson.common.utils.IntentUtil;
 
+import butterknife.ButterKnife;
 
 /**
- * 我的项目订单
+ * 订单列表
  */
-public class OrderListAdapter extends FragmentPagerAdapter {
+public class OrderListAdapter extends SwipeRefreshAdapter<MineRecommendBean> {
 
-    private Context context;
 
-    public OrderListAdapter(FragmentManager fm, Context context) {
-        super(fm);
-        this.context = context;
+    private FormatTime time;
+
+    public OrderListAdapter(Context context) {
+        super(context);
+        time = new FormatTime(context);
     }
 
     @Override
-    public Fragment getItem(int position) {
-        OrderListFragment fragment = new OrderListFragment();
-        Bundle bundle = new Bundle();
-        switch (position) {
-            case 0:
-                bundle.putString("status","0");//0全部1待付款2已付款3未消费4已完成
-                break;
-            case 1:
-                bundle.putString("status","1");
-                break;
-            case 2:
-                bundle.putString("status","3");
-                break;
-            case 3:
-                bundle.putString("status","4");
-                break;
-            case 4:
-                bundle.putString("status","4");
-                break;
-            case 5:
-                bundle.putString("status","4");
-                break;
-            case 6:
-                bundle.putString("status","4");
-                break;
+    public RecyclerView.ViewHolder onCreateViewHolder2(ViewGroup parent, int viewType) {
+        return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_order_list, parent, false));
+    }
 
-        }
-        fragment.setArguments(bundle);
-        return fragment;
+    @Override
+    public void onBindViewHolder2(RecyclerView.ViewHolder holder, int position) {
+//        final MineRecommendBean bean = getItem(position);
+//        if (bean == null) {
+//            return;
+//        }
+        ViewHolder viewHolder = (ViewHolder) holder;
+        viewHolder.setParameter(null);
+        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                IntentUtil.startActivity(context, OrderDetailsActivity.class);
+            }
+        });
     }
 
     @Override
     public int getCount() {
-        return 7;
+        return 6;
     }
 
-    @Override
-    public CharSequence getPageTitle(int position) {
-        switch (position) {
-            case 0:
-                return context.getString(R.string.all);
-            case 1:
-                return context.getString(R.string.wait_pay);
-            case 2:
-                return context.getString(R.string.wait_receiving);
-            case 3:
-                return context.getString(R.string.doned);
-            case 4:
-                return context.getString(R.string.wait_deliver);
-            case 5:
-                return context.getString(R.string.wait_evaluate);
-            case 6:
-                return context.getString(R.string.wait_share);
+    public class ViewHolder extends RecyclerView.ViewHolder {
+
+
+        ViewHolder(View view) {
+            super(view);
+            ButterKnife.inject(this, view);
         }
-        return "";
+
+        public void setParameter(final MineRecommendBean bean) {
+
+        }
     }
+
 }

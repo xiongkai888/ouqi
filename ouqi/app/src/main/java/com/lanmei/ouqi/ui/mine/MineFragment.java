@@ -10,6 +10,7 @@ import com.lanmei.ouqi.MainActivity;
 import com.lanmei.ouqi.R;
 import com.lanmei.ouqi.adapter.MineRecommendAdapter;
 import com.lanmei.ouqi.ui.mine.activity.OrderListActivity;
+import com.lanmei.ouqi.ui.mine.activity.SettingActivity;
 import com.lanmei.ouqi.utils.CommonUtils;
 import com.xson.common.app.BaseFragment;
 import com.xson.common.utils.IntentUtil;
@@ -49,23 +50,26 @@ public class MineFragment extends BaseFragment {
         typeTv.setText("为您推荐");
     }
 
-    @OnClick({R.id.mine_1_tv, R.id.mine_2_tv, R.id.mine_3_tv, R.id.mine_4_tv, R.id.mine_5_tv, R.id.mine_6_tv, R.id.mine_7_tv, R.id.mine_8_tv, R.id.mine_9_tv, R.id.mine_10_tv, R.id.mine_11_tv, R.id.mine_12_tv, R.id.mine_13_tv})
+    @OnClick({R.id.order_all_tv,R.id.mine_1_tv, R.id.mine_2_tv, R.id.mine_3_tv, R.id.mine_4_tv, R.id.mine_5_tv, R.id.mine_6_tv, R.id.mine_7_tv, R.id.mine_8_tv, R.id.mine_9_tv, R.id.mine_10_tv, R.id.mine_11_tv, R.id.mine_12_tv, R.id.mine_13_tv})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.order_all_tv://查看全部
+                IntentUtil.startActivity(context, 0, OrderListActivity.class);
+                break;
             case R.id.mine_1_tv://待付款
-                IntentUtil.startActivity(context, OrderListActivity.class);
+                IntentUtil.startActivity(context, 1, OrderListActivity.class);
                 break;
             case R.id.mine_2_tv://待发货
-                IntentUtil.startActivity(context, OrderListActivity.class);
+                IntentUtil.startActivity(context, 4, OrderListActivity.class);
                 break;
             case R.id.mine_3_tv://待收货
-                IntentUtil.startActivity(context, OrderListActivity.class);
+                IntentUtil.startActivity(context, 2, OrderListActivity.class);
                 break;
             case R.id.mine_4_tv://待评价
-                IntentUtil.startActivity(context, OrderListActivity.class);
+                IntentUtil.startActivity(context, 5, OrderListActivity.class);
                 break;
             case R.id.mine_5_tv://待分享
-                IntentUtil.startActivity(context, OrderListActivity.class);
+                IntentUtil.startActivity(context, 6, OrderListActivity.class);
                 break;
             case R.id.mine_6_tv://我的拼团
                 MainActivity.showShareBill(context);
@@ -86,7 +90,7 @@ public class MineFragment extends BaseFragment {
                 CommonUtils.developing(context);
                 break;
             case R.id.mine_12_tv://个人设置
-                CommonUtils.developing(context);
+                IntentUtil.startActivity(context, SettingActivity.class);
                 break;
             case R.id.mine_13_tv://收货地址
                 CommonUtils.developing(context);

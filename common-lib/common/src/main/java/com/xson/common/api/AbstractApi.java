@@ -19,6 +19,7 @@ public abstract class AbstractApi {
     public static String API_URL = "";
     private String key = "yxg";
     public HashMap<String, Object> paramsHashMap = new HashMap<String, Object>();
+    Method method = Method.POST;
 
     public static enum Method {
         GET,
@@ -28,6 +29,10 @@ public abstract class AbstractApi {
     public static enum Enctype {
         TEXT_PLAIN,
         MULTIPART,
+    }
+
+    public void setMethod(Method method){
+        this.method = method;
     }
 
     protected abstract String getPath();

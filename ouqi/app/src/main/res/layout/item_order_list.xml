@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/v_match_parent_no"
+    android:layout_marginBottom="@dimen/d_10dp">
+
+    <TextView
+        style="@style/match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/d_10dp"
+        android:text="订单号：100866" />
+
+    <TextView style="@style/line_H1dp_divider" />
+
+
+    <include layout="@layout/item_order_list_sub"/>
+
+    <LinearLayout
+        style="@style/h_match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/d_10dp">
+
+
+        <LinearLayout
+            style="@style/v_match_parent_no"
+            android:layout_width="@dimen/d_0dp"
+            android:layout_weight="1">
+
+            <com.xson.common.widget.FormatTextView
+                style="@style/text12color666"
+                app:defaultValue="配送中"
+                app:formatText="@string/order_state" />
+
+            <com.xson.common.widget.FormatTextView
+                style="@style/text12color666"
+                app:defaultValue="194.00"
+                app:formatText="@string/order_total_price" />
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/text14colorRed"
+            android:background="@drawable/order_sure"
+            android:gravity="center"
+            android:text="确定收货" />
+
+        <TextView
+            style="@style/text14colorWhite"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:background="@drawable/order_pay_again"
+            android:gravity="center"
+            android:text="再次购买" />
+
+    </LinearLayout>
+
+</LinearLayout>

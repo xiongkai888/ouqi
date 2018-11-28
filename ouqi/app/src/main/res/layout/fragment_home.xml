@@ -28,10 +28,10 @@
             android:layout_weight="1"
             android:background="@drawable/search_bg"
             android:drawableLeft="@mipmap/icon_search"
-            android:drawablePadding="8dp"
+            android:drawablePadding="@dimen/d_3dp"
             android:hint="@string/input_keyword"
-            android:padding="7dp"
-            android:textSize="12sp" />
+            android:padding="@dimen/d_5dp"
+            android:textSize="@dimen/txt_12sp" />
 
 
         <TextView

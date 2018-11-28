@@ -3,7 +3,7 @@ package com.lanmei.ouqi.ui.mine.fragment;
 import android.os.Bundle;
 
 import com.lanmei.ouqi.R;
-import com.lanmei.ouqi.adapter.OrderListSubAdapter;
+import com.lanmei.ouqi.adapter.OrderListAdapter;
 import com.lanmei.ouqi.bean.MineRecommendBean;
 import com.xson.common.api.OuQiApi;
 import com.xson.common.app.BaseFragment;
@@ -39,7 +39,7 @@ public class OrderListFragment extends BaseFragment {
     private void initSwipeRefreshLayout() {
         smartSwipeRefreshLayout.initWithLinearLayout();
         OuQiApi api = new OuQiApi("Reservation/index");
-        OrderListSubAdapter adapter = new OrderListSubAdapter(context);
+        OrderListAdapter adapter = new OrderListAdapter(context);
         smartSwipeRefreshLayout.setAdapter(adapter);
         controller = new SwipeRefreshController<NoPageListBean<MineRecommendBean>>(context, smartSwipeRefreshLayout, api, adapter) {
         };

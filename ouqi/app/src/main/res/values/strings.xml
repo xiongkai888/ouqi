@@ -11,7 +11,18 @@
     <string name="input_keyword">请输入关键字</string>
     <string name="share_bill_timer"><![CDATA[拼团倒计时 :<font color="#FF0000">%s</font>]]></string>
     <string name="order_state"><![CDATA[状态 :<font color="#FF0000">%s</font>]]></string>
+    <string name="order_state_sub"><![CDATA[订单状态 :<font color="#FF0000">%s</font>]]></string>
     <string name="order_total_price"><![CDATA[总价 :<font color="#000000">￥%s</font>]]></string>
+    <string name="order_no"><![CDATA[订单号 :<font color="#000000">%s</font>]]></string>
+    <string name="order_time"><![CDATA[下单时间 :<font color="#000000">%s</font>]]></string>
+    <string name="supply_stores"><![CDATA[供货商家 :<font color="#000000">%s</font>]]></string>
+    <string name="amount_of_goods"><![CDATA[商品金额 :<font color="#000000">%s</font>]]></string>
+    <string name="shipping_address"><![CDATA[收货地址 :<font color="#000000">%s</font>]]></string>
+    <string name="consignee"><![CDATA[收货人 :<font color="#000000">%s</font>]]></string>
+    <string name="mode_of_distribution"><![CDATA[配送方式 :<font color="#000000">%s</font>]]></string>
+    <string name="invoice_type"><![CDATA[发票类型 :<font color="#000000">%s</font>]]></string>
+    <string name="invoice_title"><![CDATA[发票抬头 :<font color="#000000">%s</font>]]></string>
+    <string name="invoice_content"><![CDATA[发票内容 :<font color="#000000">%s</font>]]></string>
 
     <string name="just_now">刚刚</string>
     <string name="minutes_ago">分钟前</string>
@@ -24,11 +35,20 @@
     <string name="format_time_year_month_day">yyyy-MM-dd</string>
 
     <string name="all">全部</string>
-    <string name="wait_pay">待支付</string>
+    <string name="wait_pay">待付款</string>
     <string name="wait_receiving">待收货</string>
     <string name="doned">已完成</string>
     <string name="wait_deliver">待发货</string>
     <string name="wait_evaluate">待评价</string>
     <string name="wait_share">待分享</string>
+    <string name="order_details">订单详情</string>
+    <string name="setting">设置</string>
+    <string name="is_default">默认</string>
+    <string name="set_default">设为默认</string>
+
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete_this_address">确定要删除该地址？</string>
+    <string name="add">添加</string>
 
 </resources>

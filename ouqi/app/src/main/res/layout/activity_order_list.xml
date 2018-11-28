@@ -8,15 +8,27 @@
 
     <include layout="@layout/include_centertitletoolbar"/>
 
+
+    <TextView
+        android:id="@+id/search_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d_5dp"
+        android:background="@drawable/search_w_bg"
+        android:drawableLeft="@mipmap/icon_search"
+        android:drawablePadding="@dimen/d_2dp"
+        android:hint="@string/input_keyword"
+        android:padding="@dimen/d_5dp"
+        android:textSize="@dimen/txt_12sp" />
+
     <android.support.design.widget.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@color/colorF4F4"
+        android:background="@color/white"
         app:tabIndicatorColor="@color/colorPrimaryDark"
         app:tabSelectedTextColor="@color/colorPrimaryDark"
         app:tabTextAppearance="@style/TabLayoutAppearance"/>
-
 
     <View style="@style/line_H1dp_divider"/>
 

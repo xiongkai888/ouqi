@@ -37,9 +37,23 @@
 
             <TextView
                 android:id="@+id/money_tv"
-                style="@style/text_weight"
+                style="@style/text"
                 android:text="￥121"
                 android:textColor="@color/colorAccent" />
+
+            <TextView
+                style="@style/text12colorWhite"
+                android:text="卷"
+                android:paddingTop="@dimen/d_0dp"
+                android:paddingBottom="@dimen/d_0dp"
+                android:paddingLeft="@dimen/d_2dp"
+                android:paddingRight="@dimen/d_2dp"
+                android:layout_marginLeft="@dimen/d_5dp"
+                android:background="@drawable/order_sure"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                style="@style/text_weight" />
 
             <ImageView
                 android:layout_width="@dimen/d_20dp"

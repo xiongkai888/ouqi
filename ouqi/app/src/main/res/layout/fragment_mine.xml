@@ -2,18 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
     android:orientation="vertical">
 
     <include layout="@layout/include_centertitletoolbar" />
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
         <LinearLayout style="@style/v_all_match_parent_no">
-
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -119,7 +119,6 @@
                 style="@style/line_H1dp_divider"
                 android:layout_marginTop="@dimen/d_10dp" />
 
-
             <LinearLayout
                 style="@style/h_match_parent"
                 android:padding="@dimen/d_10dp">
@@ -130,8 +129,9 @@
 
 
                 <TextView
+                    android:id="@+id/order_all_tv"
                     style="@style/text12color999"
-                    android:text="查看全部》" />
+                    android:text="查看全部 >" />
 
             </LinearLayout>
 
@@ -143,31 +143,31 @@
                     android:id="@+id/mine_1_tv"
                     style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_1"
-                    android:text="待付款" />
+                    android:text="@string/wait_pay" />
 
                 <TextView
                     android:id="@+id/mine_2_tv"
                     style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_2"
-                    android:text="待发货" />
+                    android:text="@string/wait_deliver" />
 
                 <TextView
                     android:id="@+id/mine_3_tv"
                     style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_3"
-                    android:text="待收货" />
+                    android:text="@string/wait_receiving" />
 
                 <TextView
                     android:id="@+id/mine_4_tv"
                     style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_4"
-                    android:text="待评价" />
+                    android:text="@string/wait_evaluate" />
 
                 <TextView
                     android:id="@+id/mine_5_tv"
                     style="@style/mine_text_style"
                     android:drawableTop="@mipmap/mine_5"
-                    android:text="待分享" />
+                    android:text="@string/wait_share" />
 
             </LinearLayout>
 
@@ -239,7 +239,8 @@
 
             </LinearLayout>
 
-            <include layout="@layout/include_type" />
+            <include
+                layout="@layout/include_type" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recyclerView"

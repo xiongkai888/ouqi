@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent_no"
+    tools:context="com.lanmei.ouqi.ui.mine.activity.SettingActivity">
+
+    <include layout="@layout/include_centertitletoolbar"/>
+
+    <LinearLayout
+        style="@style/ll_bottom_h"
+        android:layout_marginTop="@dimen/d_10dp"
+        android:padding="@dimen/d_10dp">
+
+        <TextView
+            style="@style/text_weight"
+            android:text="我的会员" />
+
+        <TextView
+            style="@style/text14color999"
+            android:gravity="center_vertical"
+            android:drawableRight="@mipmap/in_right"
+            android:text="注册会员" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_bottom_h"
+        android:padding="@dimen/d_10dp">
+
+        <TextView
+            style="@style/text_weight"
+            android:text="账户安全" />
+
+        <TextView
+            style="@style/text14color999"
+            android:gravity="center_vertical"
+            android:drawableRight="@mipmap/in_right"
+            android:text="绑定手机" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_bottom_h"
+        android:padding="@dimen/d_10dp">
+
+        <TextView
+            style="@style/text_weight"
+            android:text="关于欧气优选" />
+
+        <TextView
+            style="@style/text14color999"
+            android:gravity="center_vertical"
+            android:drawableRight="@mipmap/in_right" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_marginTop="@dimen/d_40dp"
+        style="@style/button_style"
+        android:text="退出当前用户" />
+
+</LinearLayout>
