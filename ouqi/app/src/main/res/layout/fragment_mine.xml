@@ -43,8 +43,8 @@
 
                         <LinearLayout style="@style/h_match_parent_no">
 
-                            <ImageView
-                                style="@style/text"
+                            <com.xson.common.widget.CircleImageView
+                                android:id="@+id/pic_iv"
                                 android:layout_width="@dimen/d_60dp"
                                 android:layout_height="@dimen/d_60dp"
                                 android:src="@mipmap/temp_pic" />
@@ -54,10 +54,22 @@
                                 style="@style/v_match_parent_no"
                                 android:layout_marginLeft="@dimen/d_5dp">
 
-                                <TextView
-                                    style="@style/text"
-                                    android:text="13400000000  注册会员" />
 
+                                <LinearLayout
+                                    style="@style/h_match_parent_no">
+
+                                    <TextView
+                                        android:id="@+id/name_tv"
+                                        style="@style/text"
+                                        android:text="13400000000" />
+
+                                    <TextView
+                                        style="@style/text14color666"
+                                        android:layout_marginLeft="@dimen/d_10dp"
+                                        android:drawableLeft="@mipmap/mine_name"
+                                        android:text="注册会员" />
+
+                                </LinearLayout>
 
                                 <ProgressBar
                                     style="?android:attr/progressBarStyleHorizontal"
@@ -79,6 +91,7 @@
                             android:layout_marginTop="@dimen/d_20dp">
 
                             <TextView
+                                android:id="@+id/account_tv"
                                 style="@style/text_weight"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
@@ -86,6 +99,7 @@
                                 android:textColor="@color/color666" />
 
                             <TextView
+                                android:id="@+id/red_packet_tv"
                                 style="@style/text_weight"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
@@ -93,6 +107,7 @@
                                 android:textColor="@color/color666" />
 
                             <TextView
+                                android:id="@+id/discount_coupon_tv"
                                 style="@style/text_weight"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
@@ -100,9 +115,11 @@
                                 android:textColor="@color/color666" />
 
                             <TextView
+                                android:id="@+id/play_yards_tv"
                                 style="@style/text_weight"
                                 android:drawableTop="@mipmap/mine_qr"
-                                android:gravity="center"
+                                android:gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/d_2dp"
                                 android:text="出场码"
                                 android:textColor="@color/color666" />
 

@@ -2,8 +2,13 @@ package com.lanmei.ouqi.utils;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.design.widget.TabLayout;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.RelativeSizeSpan;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.EditText;
@@ -286,6 +291,25 @@ public class CommonUtils {
                 , "http://upload-images.jianshu.io/upload_images/5862228-94c2cc04e8e0272f.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/678/h/260"
                 , "http://p3.so.qhmsg.com/bdr/200_200_/t01c9b562b657abcb68.jpg");
         return list;
+    }
+
+    /**
+     * @param s1       要改变颜色的文字
+     * @param s2       要改变颜色的文字为空时的默认文字
+     * @param s3       全部文字
+     * @param textView
+     * @param color     要改变颜色ID
+     */
+    public static void setSpannableString(String s1, String s2, String s3, TextView textView, String color) {
+        if (StringUtils.isEmpty(s1)) {
+            s1 = s2;
+        }
+        SpannableString spannableString = new SpannableString(s3);
+        RelativeSizeSpan sizeSpan = new RelativeSizeSpan(1.2f);
+        spannableString.setSpan(sizeSpan, 0, s1.length(), Spanned.SPAN_INCLUSIVE_EXCLUSIVE);//字体大小
+        ForegroundColorSpan colorSpan = new ForegroundColorSpan(Color.parseColor(color));
+        spannableString.setSpan(colorSpan, 0, s1.length(), Spanned.SPAN_INCLUSIVE_EXCLUSIVE);//字体颜色
+        textView.setText(spannableString);
     }
 
 }

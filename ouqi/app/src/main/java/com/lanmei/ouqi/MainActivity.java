@@ -20,6 +20,9 @@ public class MainActivity extends BaseActivity {
     TabLayout mTabLayout;
     TabHelper tabHelper;
 
+    public static final String ACTION_SHOW_HOME = "android.intent.action.SHOW_HOME";
+    public static final String ACTION_SHARE_BILL = "android.intent.action.SHARE_BILL";
+
     @Override
     public int getContentViewId() {
         return R.layout.activity_main;
@@ -35,9 +38,6 @@ public class MainActivity extends BaseActivity {
         tabHelper = new TabHelper(this, mTabLayout);
         tabHelper.setOrderNum(0);
     }
-
-    public static final String ACTION_SHOW_HOME = "android.intent.action.SHOW_HOME";
-    public static final String ACTION_SHARE_BILL = "android.intent.action.SHARE_BILL";
 
     @Override
     protected void onNewIntent(Intent intent) {

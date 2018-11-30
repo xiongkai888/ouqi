@@ -45,6 +45,8 @@ public class ShareBillFragment extends BaseFragment{
         controller = new SwipeRefreshController<NoPageListBean<MineRecommendBean>>(context, smartSwipeRefreshLayout, api, adapter) {
         };
         smartSwipeRefreshLayout.setMode(SmartSwipeRefreshLayout.Mode.NO_PAGE);
+//        View view = LayoutInflater.from(context).inflate(R.layout.empty_shop_car, smartSwipeRefreshLayout, true);
+//        smartSwipeRefreshLayout.setEmptyLayout(view);
         adapter.notifyDataSetChanged();
     }
 }

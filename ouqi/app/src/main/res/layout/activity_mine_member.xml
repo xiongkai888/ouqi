@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_match_parent_no"
+    tools:context="com.lanmei.ouqi.ui.mine.activity.MineMemberActivity">
+
+    <include layout="@layout/include_centertitletoolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            style="@style/v_match_parent_no">
+
+
+            <ImageView
+                android:layout_marginTop="@dimen/d_10dp"
+                android:layout_marginBottom="@dimen/d_10dp"
+                android:src="@mipmap/temp_huiyuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:background="@drawable/border_bottom_divider"
+                android:padding="@dimen/d_10dp"
+                android:text="我的特权"
+                android:textSize="@dimen/txt_16sp"
+                style="@style/match_parent" />
+
+            <TextView
+                android:background="@color/white"
+                android:padding="@dimen/d_10dp"
+                android:text="好友参团，人满发货，人不满恳求"
+                style="@style/match_parent" />
+
+
+
+            <TextView
+                android:layout_marginTop="@dimen/d_10dp"
+                android:background="@drawable/border_bottom_divider"
+                android:padding="@dimen/d_10dp"
+                android:text="我的会员"
+                android:textSize="@dimen/txt_16sp"
+                style="@style/match_parent" />
+
+            <TextView
+                android:background="@color/white"
+                android:padding="@dimen/d_10dp"
+                android:text="好友参团，人满发货，人不满恳求"
+                style="@style/match_parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

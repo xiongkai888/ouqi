@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_match_parent_no"
+    tools:context="com.lanmei.ouqi.ui.mine.activity.SecurityCenterActivity">
+
+    <include layout="@layout/include_centertitletoolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/v_match_parent_no">
+
+            <TextView
+                android:layout_marginTop="@dimen/d_10dp"
+                android:text="版权信息"
+                android:background="@drawable/border_bottom_divider"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/in_right"
+                android:padding="@dimen/d_10dp"
+                style="@style/match_parent" />
+            <TextView
+                android:text="软件许可使用协议"
+                android:background="@drawable/border_bottom_divider"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/in_right"
+                android:padding="@dimen/d_10dp"
+                style="@style/match_parent" />
+            <TextView
+                android:text="欧气优选服务平台"
+                android:background="@drawable/border_bottom_divider"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/in_right"
+                android:padding="@dimen/d_10dp"
+                style="@style/match_parent" />
+            <TextView
+                android:text="隐私权政策"
+                android:background="@drawable/border_bottom_divider"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/in_right"
+                android:padding="@dimen/d_10dp"
+                style="@style/match_parent" />
+            <TextView
+                android:text="帮助中心"
+                android:background="@drawable/border_bottom_divider"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/in_right"
+                android:padding="@dimen/d_10dp"
+                style="@style/match_parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

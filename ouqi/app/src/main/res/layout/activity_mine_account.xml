@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_match_parent_no"
+    tools:context="com.lanmei.ouqi.ui.mine.activity.MineAccountActivity">
+
+    <include layout="@layout/include_centertitletoolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            style="@style/v_match_parent_no">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/d_10dp">
+
+                <ImageView
+                    android:id="@+id/bg_iv"
+                    style="@style/match_parent"
+                    android:layout_marginBottom="@dimen/d_40dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/mine_bg" />
+
+                <com.xson.common.widget.CircleImageView
+                    android:id="@+id/pic_iv"
+                    android:layout_width="@dimen/d_80dp"
+                    android:layout_height="@dimen/d_80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/d_20dp"
+                    android:src="@mipmap/temp_pic" />
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    style="@style/text"
+                    android:text="账户余额：0.00元"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/d_5dp"
+                    android:layout_toRightOf="@id/pic_iv"
+                    android:paddingBottom="@dimen/d_10dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/d_10dp"
+                android:text="提现"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/in_right"
+                android:padding="@dimen/d_10dp"
+                style="@style/match_parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -8,6 +8,7 @@ import com.lanmei.ouqi.ui.classify.ClassifyFragment;
 import com.lanmei.ouqi.ui.home.HomeFragment;
 import com.lanmei.ouqi.ui.mine.MineFragment;
 import com.lanmei.ouqi.ui.share_bill.ShareBillFragment;
+import com.lanmei.ouqi.ui.shopping.ShoppingFragment;
 
 
 public class MainPagerAdapter extends FragmentPagerAdapter {
@@ -26,7 +27,7 @@ public class MainPagerAdapter extends FragmentPagerAdapter {
             case 2:
                 return new ShareBillFragment();//拼单
             case 3:
-                return new HomeFragment();//购物车
+                return new ShoppingFragment();//购物车
             case 4:
                 return new MineFragment();//我的
         }

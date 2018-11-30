@@ -31,6 +31,21 @@
         <activity
             android:name=".ui.mine.activity.SettingActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.activity.MineAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.activity.MineCouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.activity.MineRedPacketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.activity.MineMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.activity.SecurityCenterActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

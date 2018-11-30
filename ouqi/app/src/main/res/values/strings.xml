@@ -23,6 +23,7 @@
     <string name="invoice_type"><![CDATA[发票类型 :<font color="#000000">%s</font>]]></string>
     <string name="invoice_title"><![CDATA[发票抬头 :<font color="#000000">%s</font>]]></string>
     <string name="invoice_content"><![CDATA[发票内容 :<font color="#000000">%s</font>]]></string>
+    <string name="total_cash"><![CDATA[总计 :<font color="#F5484A">￥%s</font>]]></string>
 
     <string name="just_now">刚刚</string>
     <string name="minutes_ago">分钟前</string>
@@ -50,5 +51,20 @@
     <string name="cancel">取消</string>
     <string name="delete_this_address">确定要删除该地址？</string>
     <string name="add">添加</string>
+    <string name="edit">编辑</string>
+    <string name="done">完成</string>
+    <string name="balance">余额：%1$s</string>
+    <string name="delete">删除</string>
+    <string name="price">￥%1$s</string>
+    <string name="price_sub">单价：￥%1$s</string>
+    <string name="mine_account">我的账户</string>
+    <string name="mine_member">我的会员</string>
+    <string name="details">明细</string>
+    <string name="mine_coupon">我的优惠卷</string>
+    <string name="mine_red_packet">我的红包</string>
+    <string name="to_be_used">待使用</string>
+    <string name="have_been_used">已使用</string>
+    <string name="have_expired">已过期</string>
+    <string name="security_center">安全中心</string>
 
 </resources>
