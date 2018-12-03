@@ -5,53 +5,51 @@
     style="@style/v_match_parent_no"
     tools:context="com.lanmei.ouqi.ui.mine.activity.MineMemberActivity">
 
-    <include layout="@layout/include_centertitletoolbar"/>
+    <include layout="@layout/include_centertitletoolbar" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
 
-        <LinearLayout
-            style="@style/v_match_parent_no">
+        <LinearLayout style="@style/v_match_parent_no">
 
 
             <ImageView
-                android:layout_marginTop="@dimen/d_10dp"
-                android:layout_marginBottom="@dimen/d_10dp"
-                android:src="@mipmap/temp_huiyuan"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d_10dp"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:src="@mipmap/temp_huiyuan" />
 
 
             <TextView
+                style="@style/match_parent"
                 android:background="@drawable/border_bottom_divider"
                 android:padding="@dimen/d_10dp"
                 android:text="我的特权"
-                android:textSize="@dimen/txt_16sp"
-                style="@style/match_parent" />
+                android:textSize="@dimen/txt_16sp" />
 
             <TextView
+                style="@style/match_parent"
                 android:background="@color/white"
                 android:padding="@dimen/d_10dp"
-                android:text="好友参团，人满发货，人不满恳求"
-                style="@style/match_parent" />
-
+                android:text="好友参团，人满发货，人不满恳求" />
 
 
             <TextView
+                style="@style/match_parent"
                 android:layout_marginTop="@dimen/d_10dp"
                 android:background="@drawable/border_bottom_divider"
                 android:padding="@dimen/d_10dp"
                 android:text="我的会员"
-                android:textSize="@dimen/txt_16sp"
-                style="@style/match_parent" />
+                android:textSize="@dimen/txt_16sp" />
 
             <TextView
+                style="@style/match_parent"
                 android:background="@color/white"
                 android:padding="@dimen/d_10dp"
-                android:text="好友参团，人满发货，人不满恳求"
-                style="@style/match_parent" />
+                android:text="好友参团，人满发货，人不满恳求" />
 
         </LinearLayout>
 

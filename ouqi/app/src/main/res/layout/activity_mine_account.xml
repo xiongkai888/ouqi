@@ -50,11 +50,10 @@
             <TextView
                 android:layout_marginTop="@dimen/d_10dp"
                 android:text="提现"
-                android:background="@color/white"
                 android:gravity="center_vertical"
                 android:drawableRight="@mipmap/in_right"
                 android:padding="@dimen/d_10dp"
-                style="@style/match_parent" />
+                style="@style/match_parent_has" />
 
         </LinearLayout>
 

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   style="@style/v_all_match_parent_no">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/h_match_parent_no">
+
+
+            <TextView
+                style="@style/text"
+                android:padding="@dimen/d_10dp"
+                android:text="综合" />
+
+            <TextView
+                style="@style/text"
+                android:padding="@dimen/d_10dp"
+                android:text="价格" />
+
+            <TextView
+                style="@style/text"
+                android:padding="@dimen/d_10dp"
+                android:text="促销" />
+
+            <TextView
+                style="@style/text"
+                android:padding="@dimen/d_10dp"
+                android:text="新品" />
+
+            <TextView
+                style="@style/text"
+                android:padding="@dimen/d_10dp"
+                android:text="筛选" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <include layout="@layout/fragment_single_listview_no" />
+
+
+</LinearLayout>

@@ -15,6 +15,7 @@ import android.text.style.ForegroundColorSpan;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewStub;
 import android.widget.FrameLayout;
@@ -310,8 +311,14 @@ public class SmartSwipeRefreshLayout extends FrameLayout {
         showSwipeRefreshLayout();
         ensureEmptyLayout();
         emptyLayout.setVisibility(VISIBLE);
-//        if (getAdapter() != null)
-//            getAdapter().showEmptyView();
+    }
+
+
+    public void setEmptyLayout(Context context,int emptyLayoutID){
+        setEmptyLayout(LayoutInflater.from(context).inflate(emptyLayoutID, this, true));
+    }
+    public void setEmptyLayout(View emptyLayout){
+        this.emptyLayout = emptyLayout;
     }
 
     private void ensureErrorLayout() {

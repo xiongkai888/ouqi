@@ -59,6 +59,10 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <style name="match_parent_has" parent="match_parent">
+        <item name="android:background">@color/white</item>
+    </style>
+
     <!--背景白色，有底部边框-->
     <style name="ll_bottom_h" parent="ll_bottom_h_no">
         <item name="android:background">@drawable/border_bottom_divider</item>
@@ -66,6 +70,12 @@
 
     <!--背景白色，没有底部边框-->
     <style name="ll_bottom_h_no" parent="h_match_parent">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--背景白色，有顶部边框-->
+    <style name="ll_top" parent="h_match_parent">
+        <item name="android:background">@drawable/border_top_divider</item>
         <item name="android:gravity">center_vertical</item>
     </style>
 
@@ -204,4 +214,11 @@
         <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
         <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
     </style>
+
+    <style name="style_navigation">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
 </resources>

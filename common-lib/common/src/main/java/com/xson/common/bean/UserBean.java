@@ -52,6 +52,16 @@ public class UserBean {
     private String position;
     private String learned;
     private String nolearned;
+    private String money;
+
+    public void setMoney(String money) {
+        this.money = money;
+    }
+
+    public String getMoney() {
+        return money;
+    }
+
     private String political;//政治面貌
 
     private List<String> department;

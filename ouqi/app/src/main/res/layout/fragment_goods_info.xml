@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout style="@style/v_match_parent">
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                app:canLoop="true" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                style="@style/text"
+                android:layout_marginLeft="@dimen/d_10dp"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:text="道具黑色" />
+
+            <TextView
+                style="@style/text12color999"
+                android:layout_marginLeft="@dimen/d_10dp"
+                android:text="道具黑色" />
+
+
+            <TextView
+                android:id="@+id/price_tv"
+                style="@style/text"
+                android:layout_marginLeft="@dimen/d_10dp"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:text="￥0"
+                android:paddingBottom="@dimen/d_5dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView style="@style/line_H10dp_on" />
+
+
+            <LinearLayout
+                style="@style/ll_bottom_h_no">
+
+                <TextView
+                    android:text="优惠"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    style="@style/text14color666" />
+
+                <TextView
+                    android:text="纸尿裤专场优惠卷"
+                    android:padding="@dimen/d_10dp"
+                    android:drawableRight="@mipmap/in_right"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    android:background="@drawable/border_bottom_divider"
+                    style="@style/match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/ll_bottom_h_no">
+
+                <TextView
+                    android:text="促销"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    style="@style/text14color666" />
+
+                <TextView
+                    android:text="购买可得8积分"
+                    android:padding="@dimen/d_10dp"
+                    android:drawableRight="@mipmap/in_right"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    android:background="@drawable/border_bottom_divider"
+                    style="@style/match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_bottom_h_no">
+
+                <TextView
+                    android:text="服务"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    style="@style/text14color666" />
+
+                <TextView
+                    android:text="极速退货、正品保障"
+                    android:padding="@dimen/d_10dp"
+                    android:drawableRight="@mipmap/in_right"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    android:background="@drawable/border_bottom_divider"
+                    style="@style/match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/ll_bottom_h_no">
+
+                <TextView
+                    android:text="选择"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    style="@style/text14color666" />
+
+                <TextView
+                    android:hint="请选择颜色分类"
+                    android:padding="@dimen/d_10dp"
+                    android:drawableRight="@mipmap/in_right"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    android:background="@drawable/border_bottom_divider"
+                    style="@style/match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/ll_bottom_h_no">
+
+                <TextView
+                    android:text="参数"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    style="@style/text14color666" />
+
+                <TextView
+                    android:hint="品牌/产地/包装"
+                    android:padding="@dimen/d_10dp"
+                    android:drawableRight="@mipmap/in_right"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    android:background="@drawable/border_bottom_divider"
+                    style="@style/match_parent" />
+
+            </LinearLayout>
+
+            <TextView style="@style/line_H10dp_on" />
+
+            <LinearLayout
+                style="@style/ll_bottom_h"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+
+                <com.xson.common.widget.FormatTextView
+                    android:id="@+id/comment_num_tv"
+                    style="@style/text_weight"
+                    app:defaultValue="0"
+                    app:formatText="@string/comments" />
+
+                <TextView
+                    android:text="查看全部"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@mipmap/in_right"
+                    style="@style/text14color999" />
+
+            </LinearLayout>
+
+            <include layout="@layout/include_item_tab" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

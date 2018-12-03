@@ -66,5 +66,9 @@
     <string name="have_been_used">已使用</string>
     <string name="have_expired">已过期</string>
     <string name="security_center">安全中心</string>
+    <string name="collect">收藏</string>
+    <string name="collected">已收藏</string>
+    <string name="time">2018-12-1 12:33:55</string>
+    <string name="comments"><![CDATA[商品评价(<font color="#F5484A">%s</font>)]]></string>
 
 </resources>

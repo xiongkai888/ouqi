@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/h_match_parent"
+    android:layout_marginBottom="@dimen/d_3dp"
+    android:layout_marginTop="@dimen/d_3dp"
+    android:padding="@dimen/d_10dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/d_100dp"
+        android:layout_height="@dimen/d_100dp"
+        android:src="@mipmap/temp_goods" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout style="@style/v_match_parent_no">
+
+            <TextView
+                style="@style/text"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="花王（Merries）纸尿裤 NB90片 新生儿尿不湿 0-5KG 日本原装进口" />
+
+            <TextView
+                style="@style/text12color999"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="小屁屁干爽舒适，呵护宝宝娇嫩肌肤！" />
+
+            <TextView
+                style="@style/text14colorRed"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:text="￥52.8" />
+
+            <TextView
+                style="@style/text12color666"
+                android:text="12条评论 好评率83%" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/goods_details_iv"
+            android:layout_width="@dimen/d_30dp"
+            android:layout_height="@dimen/d_30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_shopping_cart" />
+
+    </RelativeLayout>
+
+</LinearLayout>
